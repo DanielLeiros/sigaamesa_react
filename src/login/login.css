@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* The image used */
+
+}
+.container-login{ 
+    background-image: url("../images/ufrn-reitoria.jpg");
+    width: 100%;
+    height: 100%;
+    height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    height: stretch;
+    /* Add the blur effect */ 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.container-login .form-error{
+    font-size: 16px;
+    color: rgba(206, 13, 13, 0.85);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+  
+* {
+  box-sizing: border-box;
+}
+
+.container-login .bg-form {
+    background-color: rgba(108, 29, 239, .85); /* Black w/opacity/see-through */
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.container-login .login-title {
+    font-weight: normal;
+    letter-spacing: 5px;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 2px;
+    margin-bottom: 20px;      
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+  }
