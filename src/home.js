@@ -48,8 +48,9 @@ class ListagemReservas extends React.Component {
 							<tr>
 								<th>Mesa</th>
 								<th>Data</th>
-								<th>Refeição</th>
 								<th>Hora</th>
+								<th>Refeição</th>
+								<th>Cliente</th>
 								<th>Status</th>
 								<th>Ações</th>
 							</tr>
@@ -59,10 +60,11 @@ class ListagemReservas extends React.Component {
 								return (
 									<tr key={key}>
 										<td>{item.mesa}</td>
-										<td>{item.dataConsulta}</td>
+										<td>{item.dataReserva}</td>
+										<td>{item.horaReserva}</td>
 										<td>{item.refeicao}</td>
-										<td>{item.horaConsulta + "h"}</td>
-										<td>{tiposReserva[item.status]}</td>
+										<td>{item.cliente}</td>
+										<td>{item.descricao}</td>
 										<td>
 
 										<i className="r-icon fas fa-trash-alt clicavel" 

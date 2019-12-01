@@ -23,7 +23,7 @@ const CadastroReserva = (props) => {
 
     const handleSubmit = (values) => {
         const token = getToken()        
-        axios.post(`http://localhost:8080/sigaamesa/reserva/adicionar?usuarioId=1&mesaId=${values.sala}&refeicao=${values.refeicao}&dataReserva=${values.data}&horaReserva=${values.horario}&cliente=${values.cliente}`, {headers:{token: token }}
+        axios.post(`http://localhost:8080/sigaamesa/reserva/adicionar?usuarioId=1&mesaId=${values.sala}&refeicao=${values.refeicao}&dataReserva=${values.data}&horaReserva=${values.horario}&cliente=${values.cliente}&statusId=3`, {headers:{token: token }}
          ).then(() =>{
              alert("Reserva realizada com sucesso")
              props.history.push("/")
