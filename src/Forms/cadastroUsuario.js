@@ -32,7 +32,7 @@ const CadastroUser = (props) => {
                     <div className="form-fields col-12 align-self-center">
                         <div className="login-title">Cadastro de Usuário</div>
                         <Formik 
-                            initialValues={{nome:"", password: "", passwordConfirm: "",tipoUsuario: "BOLSISTA", cpf: ""}}
+                            initialValues={{nome:"", password: "", passwordConfirm: "",tipoUsuario: "ADMIN", cpf: ""}}
                             onSubmit={handleSubmit}
                             validationSchema={validations}
                         >
